@@ -1,0 +1,136 @@
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f7fc;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+}
+
+
+ .container {
+    display: flex;
+    margin: 50px;
+    justify-content: center;  
+    height: 100vh;  
+    gap: 15%;
+} 
+
+
+.column {
+    
+    height: 50%;
+    padding: 20px;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+}
+
+
+#img {
+    width: 80px;
+    height: 80px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px; 
+    margin-top: 10px;
+}
+
+#reset {
+    display: block;
+    margin: 10px auto; 
+}
+
+button {
+    display: inline-block; 
+    width: 150px;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #FDAB9E;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s;
+    
+}
+
+button:hover {
+    background-color: #E50046;
+}
+
+#turn {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin: 10px 0;
+}
+
+#start{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    gap:50px;
+}
+ 
+label{
+    color:#002060;
+}
+
+label input{
+    width: 150px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 15px;
+    background-color:white;
+    border: solid 0px ;
+}
+
+.heading{
+    color:#002060;
+    margin-top: 3%;
+    margin-bottom: 5%;
+}
+
+#turn{
+    color:#FFCF50;
+    font-weight:800;
+    font-size:25px;
+}
+
+span{
+    color:#C00000;
+    font-weight: 700;
+}
+
+#winnerMessage{
+    color:#C00000;
+    font-size:40px;
+    font-weight:bolder;
+
+}
+
+  
+@media (max-width: 768px) {
+    .container {
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top:50%;
+        
+    }
+
+    .column {
+        display:flex;
+        flex-direction: column;
+        width: 90%;
+        align-items: center; /* Ensures all content is centered */
+        justify-content: center; /* Centers vertically */
+    }
+}

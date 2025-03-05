@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dice Game</title>
+    <link  rel = "stylesheet" href = "style.css">
+    
+</head>
+<body>
+       <div><h1 class="heading">Two-Player Dice Game</h1> </div> 
+        <div id = "start"> 
+            <label>Enter name: <input type="text" id="player1Name" value="Player 1"></label>
+            <label>Enter name: <input type="text" id="player2Name" value="Player 2"></label>
+            <button id = "startGame">Start Game</button>
+        </div>
+      
+        <div class="container" id="Game" style="display: none;">
+
+            <div class ="column">
+                <h2><span id="player1" >Player 1</span></h2>
+                <p>Current Score: <span id="currentScore1">0</span></p>
+                <p>Saved Score: <span id="savedScore1">0</span></p>
+            </div>
+
+        <div class = "column">
+            <h1 id="turn">Player 1 Turn</h1> 
+            <img src="./Asset/dice1.png" alt="Dice" id = "img">
+            <div class="button-container">
+                <button id="roll">Roll the dice</button>
+                <button id="save">Save score</button>
+            </div>
+            <button id="reset">Reset</button> 
+        </div>
+
+        <div class = "column"> 
+            
+            <h2><span id="player2" >Player 2</span></h2>
+            <p>Current Score: <span id="currentScore2">0</span></p>
+            <p>Saved Score: <span id="savedScore2">0</span></p>
+        </div>
+       
+    </div>
+
+    <div id="winnerSection" style="display: none;">
+        <h2 id="winnerMessage"></h2>
+        <button id="restart">Restart Game</button>
+    </div>
+    
+    <script src ="script.js"></script>
+    
+</body>
+</html>
+
+
