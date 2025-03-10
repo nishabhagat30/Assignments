@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="heading">Quiz Game</h1>
+    <div id = "start-screen">
+        <div class="select-container">
+        <label for="categorySelect">Select Category:</label>
+        <select id="category">
+            <option value="">Select Category</option>
+        </select>
+    </div>
+    <div class="select-container">
+        <label for="levelSelect">Select level:</label>
+        <select id="level">
+            <option value="">Select Difficulty</option>
+            <option value="easy">Easy</option>
+            <option value="medium">Medium</option>
+            <option value="hard">Hard</option>
+        </select>
+    </div>
+    <div>
+        <button id ="startQuiz">Start Quiz</button>
+    </div>
+    </div>
+
+    <div id = "quiz-screen">
+        <div id="topBar">
+            <!-- <div id="scoreContainer"><h3 id="scoreDisplay">Score: 0</h3></div> -->
+            <div id="scoreContainer"> Score:<span id="score"> 0</span></div>
+            <div id="timer">Time Left: <span id="timeLeft">15</span>s</div>
+        </div>
+        <div id = "question-area"> </div>
+    </div>
+
+    <div id="end-screen">
+        <div id="end">
+        <h2>Final Score:<span id="Final-score"> </span></h2>
+        <button id="restart">Play Again</button>
+    </div>
+    </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
